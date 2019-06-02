@@ -9,8 +9,7 @@ pipeline {
         }
         stage('deploy'){
             steps{               
-                sh 'cd ./target'
-                sh 'pwd'
+                sh 'cp ./target/RPAS-AssociateService-0.0.1-SNAPSHOT.jar hope.jar'
             }            
         }
     }
