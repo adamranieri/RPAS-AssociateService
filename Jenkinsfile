@@ -4,9 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'pwd'
-                sh 'cd RPAS-AssociateService/'
-                sh 'pwd'
-                              
+                sh 'mvn package'                            
             }
         }
     }
