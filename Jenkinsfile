@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cd RPAS-AssociateService'
+                sh 'cd /var/lib/docker/volumes/jenkins-data/_data/workspace/RPAS/RPAS-AssociateService'
                 sh 'mvn package'
             }
         }
