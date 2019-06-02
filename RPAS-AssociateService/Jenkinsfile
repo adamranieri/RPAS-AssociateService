@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "hello"'
-                sh 'cd ../'
+                sh 'pwd'
+                sh 'cd RPAS-AssociateService/'
+                sh 'pwd'
+                              
             }
         }
     }
