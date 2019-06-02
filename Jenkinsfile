@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pwd'
                 sh 'mvn package'                            
             }
         }
         stage('deploy'){
             steps{               
-                sh 'cp ./target/RPAS-AssociateService-0.0.1-SNAPSHOT.jar hope.jar'
+                sh 'cp ./target/*.jar rpas.jar'
             }            
         }
     }
